@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>count</title>
+</head>
+<body>
+	<p>result is</p>
+	<p id="res"></p>
+	<script type="text/javascript">
+		let str=prompt("enter the parent string","java is a language for java lovers");
+		let st=prompt("enter the child string","java");
+		let count=0;
+		for(let i=0;i<str.length;i++){
+			let temp="";
+			for(let k=i;k<i+st.length;k++){
+				temp+=str.charAt(k);
+			}
+			if(temp==st)
+				count++;
+		}
+		document.getElementById("res").innerHTML=count;
+	</script>
+</body>
+</html>
