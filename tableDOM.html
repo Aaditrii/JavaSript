@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myfunc()
+{
+var b=document.getElementById("demo");
+var row=b.insertRow(3);
+var cell1=row.insertCell(0);
+var cell2=row.insertCell(1);
+var cell3=row.insertCell(2);
+cell1.innerHTML="ajay";
+cell2.innerHTML=16;
+cell3.innerHTML="btech";
+} 
+function myfunc1()
+{
+var b=document.getElementById("demo");
+b.deleteRow(3);
+}
+</script>
+</head>
+<body>
+<table align="center" id="demo" height="500px" width="500px" border="1px">
+<th>Name</th>
+<th>Age</th>
+<th>Qualification</th>
+<tr id="demo1">
+<td>anshul</td>
+<td>13</td>
+<td>Btech</td>
+</tr>
+<tr>
+<td>riya</td>
+<td>14</td>
+<td>BA</td>
+</tr>
+</table>
+<form>
+<input type="button" value="insert row" onclick="myfunc()">
+<input type="button" value="delete row" onclick="myfunc1()">
+</form>
+</body>
+</html>
