@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arrays</title>
+<script>
+function myfunc()
+{
+var a=document.getElementById("demo2").value;
+var b=document.getElementById("demo3").value;
+var c=document.getElementById("demo4").value;
+var e=document.getElementById("demo5").value;
+var d=[a,b,c,e];
+document.write(d);
+}
+function myfunc1()
+{
+var a=document.getElementById("demo2").value;
+var b=document.getElementById("demo3").value;
+var c=document.getElementById("demo4").value;
+var e=document.getElementById("demo5").value;
+var d=[a,b,c,e];
+d.pop();
+document.write(d);
+}
+function myfunc2()
+{
+var a=document.getElementById("demo2").value;
+var b=document.getElementById("demo3").value;
+var c=document.getElementById("demo4").value;
+var e=document.getElementById("demo5").value;
+var f=document.getElementById("demo6").value;
+var d=[a,b,c,e];
+d.push(f);
+document.write(d);
+}
+function myfunc3()
+{
+var a=document.getElementById("demo2").value;
+var b=document.getElementById("demo3").value;
+var c=document.getElementById("demo4").value;
+var e=document.getElementById("demo5").value;
+var d=[a,b,c,e];
+d.shift();
+document.write(d);
+}
+function myfunc4()
+{
+var a=document.getElementById("demo2").value;
+var b=document.getElementById("demo3").value;
+var c=document.getElementById("demo4").value;
+var e=document.getElementById("demo5").value;
+var f=document.getElementById("demo6").value;
+var d=[a,b,c,e];
+d.unshift(f);
+document.write(d);
+}
+function myfunc5()
+{
+var a=document.getElementById("demo2").value;
+var b=document.getElementById("demo3").value;
+var c=document.getElementById("demo4").value;
+var e=document.getElementById("demo5").value;
+var f=document.getElementById("demo7").value;
+var g=document.getElementById("demo8").value;
+var d=[a,b,c,e];
+var h=d.slice(f,g);
+document.write(h);
+}
+function myfunc6()
+{
+var a=document.getElementById("demo2").value;
+var b=document.getElementById("demo3").value;
+var c=document.getElementById("demo4").value;
+var e=document.getElementById("demo5").value;
+var g=document.getElementById("demo6").value;
+var i=document.getElementById("demo7").value;
+var j=document.getElementById("demo9").value;
+var d=[a,b,c,e];
+d.splice(i,j,g);
+document.write(d);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" name="a" id="demo2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="b" id="demo3"><br/>
+<input type="text" name="c" id="demo4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="d" id="demo5"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="display" onclick="myfunc()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="pop" onclick="myfunc1()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="push" onclick="myfunc2()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="shift" onclick="myfunc3()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="unshift" onclick="myfunc4()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="a" id="demo6"><br/><br/>
+Enter the start index:&nbsp;
+<input type="text" name="e" id="demo7"><br/>
+Enter the end index;&nbsp;
+<input type="text" name="f" id="demo8"><br/><br/>
+Enter the no of elements you want to delete:&nbsp;
+<input type="text" name=g" id="demo9"><br/><br/>
+<input type="button" onclick="myfunc5()" value="slice"><br/>
+<input type="button" onclick="myfunc6()" value="splice"><br/>
+</form>
+</body>
+</html>
