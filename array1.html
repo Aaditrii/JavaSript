@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arrays</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+var a=["one","two","three",4,"five","six"];
+document.getElementById("demo").innerHTML=a;
+a[2]="five";
+document.getElementById("demo").innerHTML=a;
+a.push("seven");
+document.getElementById("demo").innerHTML=a;
+a.pop();
+document.getElementById("demo").innerHTML=a;
+a.shift();
+document.getElementById("demo").innerHTML=a;
+a.unshift("eleven","twelve");
+document.getElementById("demo").innerHTML=a;
+var c=a.join(";");
+document.getElementById("demo1").innerHTML=c;
+a.splice(2,2,"ten");
+document.getElementById("demo").innerHTML=a;
+var a2=[2,1,4,56,89,10];
+a2.splice(1,2,"three","four");
+document.getElementById("demo2").innerHTML=a2;
+var a3=["hi","hello","hey","yo","namastey"];
+a3.splice(-2,0,"om");
+document.getElementById("demo3").innerHTML=a3;
+var c2=a3.slice(-3,-1);
+document.getElementById("demo4").innerHTML=c2;
+var c3=a.concat(a2,a3);
+document.getElementById("demo").innerHTML=c3;
+</script>
+</body>
+</html>
