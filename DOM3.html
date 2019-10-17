@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<title>DOM3</title>
+<script>
+function myfunc1()
+{
+var list=document.createElement("li");
+var node=document.createTextNode("DBMS");
+list.appendChild(node);
+var element=document.getElementById("ul1");
+element.appendChild(list);
+}
+function myfunc2()
+{
+
+var list=document.createElement("li");
+var node=document.createTextNode("network");
+list.appendChild(node);
+var element=document.getElementById("ul1");
+var child=document.getElementById("c");
+element.insertBefore(list,child);
+}
+function myfunc3()
+{
+var element=document.getElementById("ul1");
+var child=document.getElementById("b");
+element.removeChild(child);
+}
+function myfunc4()
+{
+var list=document.createElement("li");
+var node=document.createTextNode("msg");
+list.appendChild(node);
+var element=document.getElementById("ul1");
+var child=document.getElementById("c");
+element.replaceChild(list,child);
+}
+</script>
+</head>
+<body>
+<ul id="ul1">
+<li id="a">C++</li>
+<li id="b">java</li>
+<li id="c">web</li>
+</ul>
+<input type="button" value="create" onclick="myfunc1()">
+<input type="button" value="insert" onclick="myfunc2()">
+<input type="button" value="remove" onclick="myfunc3()">
+<input type="button" value="replace" onclick="myfunc4()">
+</body>
