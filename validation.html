@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>question13</title>
+</head>
+<body>
+<form name="f" method="post" action="abc.html" onsubmit="return(validate())">
+Username<br/>
+<input type="text" name="f1" value=""><br/>
+password<br/>
+<input type="password" name="f2" value=""><br/>
+phone number<br/>
+<input type="tel" name="f3" value=""><br/>
+Email<br/>
+<input type="text" name="f4" value=""><br/>
+<input type="submit" value="ok">
+</form>
+<script>
+function validate()
+{
+if(document.f.f1.value==""||document.f.f1.value.length>8)
+{
+alert("you entered wrong value for username");
+document.f.f1.focus();
+return false;
+}
+if(document.f.f2.value=="")
+{
+alert("blank password is not allowed");
+document.f.f2.focus();
+return false;
+}
+if(document.f.f3.value==" "||document.f.f3.value.length!=10)
+{
+alert("phone number is not valid");
+document.f.f3.focus();
+return false;
+}
+if(document.f.f4.value=="")
+{
+alert("field cannot be left blank");
+document.f.f4.focus();
+return false;
+}
+var em=document.f.f4.value;
+var atpos=em.indexOf('@');
+var dotpos=em.lastIndexOf('.');
+if(atpos<1||dotpos-atpos<2)
+{
+alert("this is not a valid email");
+document.f.f4.focus();
+return false;
+}
+return true;
+}
+</script>
+</body>
+</html>
+
