@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>question12</title>
+</head>
+<body>
+<script>
+var x,y,text,text1,c,total=0,d;
+function myfun1()
+{
+x=document.getElementById("items");
+y=document.getElementById("price");
+text=x.options[x.selectedIndex].value;
+text1=y.options[y.selectedIndex].value;
+c=document.getElementById("output");
+c.value+=text+" "+text1+"\n";
+total=total+eval(text1);
+}
+function myfun()
+{
+d=document.getElementById("output1");
+d.value=total;
+}
+</script>
+<form>
+<select id="items" multiple>
+<option value="rajma">Rajma</option>
+<option value="kadi">Kadi</option>
+<option value="manchurian">Manchurian</option>
+<option value="paneer">Paneer</option>
+</select>
+<select id="price" multiple>
+<option value="100">100</option>
+<option value="100">100</option>
+<option value="80">80</option>
+<option value="100">100</option>
+</select>
+<input type="button" value="ok" onclick="myfun1()">
+<input type="button" value="total cost" onclick="myfun()">
+<textarea rows="10" id="output"></textarea>
+<textarea rows="1" id="output1"></textarea>
+<input type="reset">
+</form>
+</body>
+</html>
