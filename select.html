@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Drop Down list</title>
+<script>
+function myfun3()
+{
+var a=document.getElementById("item");
+a.remove(a.selectedIndex);
+}
+</script>
+</head>
+<body>
+<form action="ABC.html" method="post">
+<select name="items" id="item">
+<option value="car">Car</option>
+<option value="scooter">Scooter</option>
+<option value="bus">Bus</option>
+<option value="truck">truck</option>
+<option value="train">train</option>
+</select>
+<input type="button" value="ok" onclick="myfun3()">
+</form>
+</body>
+</html>
