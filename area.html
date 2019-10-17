@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AREA</title>
+<script>
+function myfun()
+{
+ var a=document.getElementById("num").value;
+var b=3.14*a*a;
+document.getElementById("area").value=b;
+}
+</script>
+</head>
+<body>
+<form>
+Enter the value of r:
+<input type="text" name="text" id="num" value=""><br/>
+ Area: <input type="text" id="area" value=""><br/>
+<input type="button" onclick="myfun()" value="calculate">
+</form>
+
+</body>
+</html>
