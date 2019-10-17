@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Prompt box</title>
+<script>
+function my_function()
+{
+var person=prompt("Enter your name:","Harry Potter");
+if(person==null||person=="")
+{
+document.write("person cancelled PROMPT");
+}
+else
+{
+document.write("Name of the person is"+person);
+}
+}
+</script>
+</head>
+<body>
+<h2>Prompt box</h2>
+<button onclick="my_function()">Try it</button>
+</body>
+</html>
